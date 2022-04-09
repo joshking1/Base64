@@ -19,7 +19,7 @@ To base64 encode string you can pipe an echo command into the base64 command-lin
 
 Without the -n flag you may capture a hidden characters, like line returns or spaces, which will corrupt your base64 encoding.
 
-echo -n 'my-string' | base64
+# echo -n 'my-string' | base64
 
 Which will output the following
 
@@ -39,7 +39,8 @@ To decode with base64 you need to use the --decode flag. With encoded string, yo
 
 Using the example encoding shown above, let’s decode it back into its original form.
 
-echo -n 'bXktc3RyaW5n' | base64 --decode
+# echo -n 'bXktc3RyaW5n' | base64 --decode
+
 Provided your encoding was not corrupted the output should be your original string.
 
 Decoding Files
